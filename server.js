@@ -1,6 +1,6 @@
 //const express=require('express')
 //const app=express()
-require('dotenv').config()
+//require('dotenv').config()
 const dbConfig=require('./config/dbConfig')
 app.use(express.json())
 app.use(express.static('public'));
@@ -15,6 +15,7 @@ app.use('/api/bookings',bookingRoute)
 
 //const port =process.env.port||5000
 app.listen(port,()=>console.log(`Node app is listinng${port}`))
+
 
 
 
